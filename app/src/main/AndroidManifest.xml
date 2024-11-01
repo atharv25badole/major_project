@@ -15,9 +15,16 @@
         android:theme="@style/Theme.Newsyy"
         tools:targetApi="31">
         <activity
+            android:name=".ProfEdit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.Newsyy" />
+        <activity
             android:name=".webView"
             android:exported="false"
-            android:theme="@style/Theme.Newsyy" />/>
+            android:theme="@style/Theme.Newsyy" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

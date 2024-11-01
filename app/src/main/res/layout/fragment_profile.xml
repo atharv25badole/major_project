@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/ProfFrag"
     style="@style/SCREEN"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -16,8 +17,9 @@
 
         <ImageView
             android:layout_width="50dp"
+            android:id="@+id/prof_back_btn"
             android:layout_height="50dp"
-            android:src="@drawable/back_btn"
+            android:background="@drawable/back_btns"
             android:padding="14dp"/>
 
         <TextView
@@ -39,8 +41,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="100dp"
+                android:id="@+id/profImage"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
@@ -49,6 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/profName"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="Gunjan Rewatkar"
@@ -59,6 +63,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/profEmail"
                 android:text="+56 65982 45698"
                 android:textColor="#CCFFFFFF"
                 android:textSize="12sp"
@@ -67,13 +72,14 @@
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
+                android:id="@+id/edit_btn"
                 android:layout_marginTop="20dp"
                 android:paddingStart="30dp"
                 android:layout_gravity="center"
                 android:background="@drawable/round_back_secondary_100"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
-                android:textColor="@color/my_primary"
+                android:textColor="@color/black"
                 android:paddingEnd="30dp"/>
 
 
@@ -110,7 +116,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/nightModeIcon"
                         android:text="Night Mode"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
@@ -148,7 +154,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/notificationIcon"
                         android:text="Notification"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.SwitchCompat
@@ -201,7 +207,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/securityIcon"
                         android:text="Security &amp; Privacy"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -223,7 +229,7 @@
 
                     <ImageView
                         android:id="@+id/textSizeIcon"
-                        android:layout_width="40dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="40dp"
                         android:background="@drawable/round_back_night_mode"
                         android:padding="12dp"
@@ -238,7 +244,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/textSizeIcon"
                         android:text="Text Size"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -275,7 +281,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/languageIcon"
                         android:text="Languages"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <ImageView
@@ -301,11 +307,11 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="15dp"/>
+                android:padding="15dp">
 
             <!-- Send Us a Messages-->
              <RelativeLayout
-
+                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -326,7 +332,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@id/messageIcon"
                     android:text="Send Us A Message"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -363,7 +369,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@id/AboutUsIcon"
                     android:text="About Us"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -400,7 +406,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@id/faqIcon"
                     android:text="FAQs"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -412,6 +418,7 @@
 
              </RelativeLayout>
 
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_marginBottom="20dp"
@@ -422,10 +429,10 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
                 android:orientation="vertical"
-                android:padding="15dp"/>
+                android:padding="15dp">
 
             <!-- Log Out-->
-            <RelativeLayout
+             <RelativeLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -447,7 +454,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@id/logOutIcon"
                     android:text="Log Out"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -457,35 +464,11 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"/>
 
+             </RelativeLayout>
 
-
-            </RelativeLayout>
+            </LinearLayout>
 
         </LinearLayout>
 
-
-
-
-
-
-
     </ScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>

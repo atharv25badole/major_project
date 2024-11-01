@@ -57,4 +57,10 @@ dependencies {
     implementation libs.converter.gson
     implementation libs.glide
     implementation libs.viewpager2
+
+    implementation libs.material.v150
+    implementation libs.circleindicator
+    implementation libs.whynotimagecarousel
+    implementation libs.circleimageview
+
 }

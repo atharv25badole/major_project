@@ -1,9 +1,12 @@
 package com.example.newsyy;
 
+import android.graphics.Bitmap;
+
 public class modelClass {
 
 
      private String author,title,description,url,urlToImage,publishedAt;
+
 
      public modelClass(String author,String title, String description, String url, String urlToImage,String publishedAt) {
           this.author=author;
@@ -61,4 +64,6 @@ public class modelClass {
      public void setPublishedAt(String publishedAt) {
           this.publishedAt = publishedAt;
      }
+
+
 }

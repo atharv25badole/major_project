@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -168,7 +169,7 @@ public class ShortsAdapter extends RecyclerView.Adapter<ShortsAdapter.ViewHolder
 
         VideoView videoView;
         ProgressBar progressBar;
-        ImageView saveBtn,favoriteBtn,shareBtn,moreBtn;
+        Button saveBtn,favoriteBtn,shareBtn,moreBtn;
         TextView title,subTitle;
 
 
@@ -179,7 +180,7 @@ public class ShortsAdapter extends RecyclerView.Adapter<ShortsAdapter.ViewHolder
             favoriteBtn = itemView.findViewById(R.id.favorites);
             saveBtn = itemView.findViewById(R.id.save);
             shareBtn = itemView.findViewById(R.id.share);
-            moreBtn = itemView.findViewById(R.id.more);
+//            moreBtn = itemView.findViewById(R.id.more);
             title = itemView.findViewById(R.id.textVideoTitle);
             subTitle =itemView.findViewById(R.id.textVideoDescription);
         }
