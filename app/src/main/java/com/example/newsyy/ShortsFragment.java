@@ -91,43 +91,43 @@ public class ShortsFragment extends Fragment {
     public void suffelVideo(int a){
 
        if(a==0){
-           ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel1, "subTitle 1", "Title 1");
+           ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel1, "subTitle 1", "Ajj TAK");
            dataHandlers.add(data);
 
        } if(a==1){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel2, "subTitle 2", "Title 2");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel2, "subTitle 2", "Ajj TAK");
             dataHandlers.add(data);
 
         } if(a==2){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel3, "subTitle 3", "Title 3");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel3, "subTitle 3", "Ajj TAK");
             dataHandlers.add(data);
 
         } else if(a==3){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel4, "subTitle 4", "Title 4");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel4, "subTitle 4", "Ajj TAK");
             dataHandlers.add(data);
 
         } else if(a==4){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel5, "subTitle 5", "Title 5");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel5, "subTitle 5", "Ajj TAK");
             dataHandlers.add(data);
 
         } else if(a==5){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel6, "subTitle 6", "Title 6");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel6, "subTitle 6", "Ajj TAK");
             dataHandlers.add(data);
 
         } else if(a==6){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel7, "subTitle 7", "Title 7");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel7, "subTitle 7", "Ajj TAK");
             dataHandlers.add(data);
 
         } else if(a==7){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel8, "subTitle 8", "Title 8");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel8, "subTitle 8", "Ajj TAK");
             dataHandlers.add(data);
 
         }else if(a==8){
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel9, "subTitle 9", "Title 9");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel9, "subTitle 9", "Ajj TAK");
             dataHandlers.add(data);
 
         }else{
-            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel10, "subTitle 10", "Title 10");
+            ShortsData data = new ShortsData("android.resource://"+getActivity().getPackageName()+"/"+R.raw.newsreel10, "subTitle 10", "Ajj TAK");
             dataHandlers.add(data);
         }
 

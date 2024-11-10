@@ -40,7 +40,7 @@ public class NewsRecyclerAdapter extends RecyclerView.Adapter<NewsRecyclerAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewsRecyclerAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull NewsRecyclerAdapter.ViewHolder holder,  int position) {
 
         holder.cardView.setOnClickListener(new View.OnClickListener(){
             @Override

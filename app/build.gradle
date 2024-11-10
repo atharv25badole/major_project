@@ -63,4 +63,7 @@ dependencies {
     implementation libs.whynotimagecarousel
     implementation libs.circleimageview
 
+
+    implementation libs.volley
+
 }

@@ -18,6 +18,7 @@ retrofit = "2.9.0"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
 viewpager2 = "1.1.0"
+volley = "1.2.1"
 whynotimagecarousel = "2.1.0"
 
 [libraries]
@@ -39,6 +40,7 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+volley = { module = "com.android.volley:volley", version.ref = "volley" }
 whynotimagecarousel = { module = "org.imaginativeworld.whynotimagecarousel:whynotimagecarousel", version.ref = "whynotimagecarousel" }
 
 [plugins]

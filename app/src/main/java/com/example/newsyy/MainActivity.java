@@ -20,6 +20,7 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -30,10 +31,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.newsyy.databinding.ActivityMainBinding;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
+import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.kwabenaberko.newsapilib.NewsApiClient;
 import com.kwabenaberko.newsapilib.models.Article;
@@ -55,6 +58,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String api="465e243239604bdfa0adfa13ea22a8b1";
 
 
+
+
+//
+//    //For Tabs
+//    TabLayout tabLayout;
+//    TabItem mgeneral,msports,mscience,mhealth,mtech,mentertainment;
+//    PagerAdapter pagerAdapter;
+//    Toolbar mtoolbar;
 
 
 
@@ -88,6 +99,59 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             return true;
         });
+
+
+//        mtoolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(mtoolbar);
+//
+//        mgeneral = findViewById(R.id.general);
+//        mscience = findViewById(R.id.science);
+//        mhealth = findViewById(R.id.health);
+//        msports = findViewById(R.id.sports);
+//        mentertainment = findViewById(R.id.entertainment);
+//        mtech = findViewById(R.id.technology);
+//
+//        ViewPager viewPager = findViewById(R.id.fragmentContainer);
+//        tabLayout = findViewById(R.id.tabsView);
+//
+//
+//        pagerAdapter = new PagerAdapter(getSupportFragmentManager(),6);
+//        viewPager.setAdapter(pagerAdapter);
+//
+//        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+//            @Override
+//            public void onTabSelected(TabLayout.Tab tab) {
+//                viewPager.setCurrentItem(tab.getPosition());
+//
+//                if(tab.getPosition()==0 || tab.getPosition()==1 || tab.getPosition()==2 || tab.getPosition()==3 ||tab.getPosition()==4 ||tab.getPosition()==5){
+//
+//                    pagerAdapter.notifyDataSetChanged();
+//
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onTabUnselected(TabLayout.Tab tab) {
+//
+//            }
+//
+//            @Override
+//            public void onTabReselected(TabLayout.Tab tab) {
+//
+//            }
+//        });
+//
+//        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+
+
+
+
+
+
+
+
+
 //        recyclerView = findViewById(R.id.news_recycler_row);
 //        progressIndicator = findViewById(R.id.progress_bar);
 //        btn1=findViewById(R.id.btn_1);

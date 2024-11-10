@@ -177,9 +177,9 @@ public class ShortsAdapter extends RecyclerView.Adapter<ShortsAdapter.ViewHolder
             super(itemView);
             videoView = itemView.findViewById(R.id.videoView);
             progressBar = itemView.findViewById(R.id.videoProgressBar);
-            favoriteBtn = itemView.findViewById(R.id.favorites);
-            saveBtn = itemView.findViewById(R.id.save);
-            shareBtn = itemView.findViewById(R.id.share);
+//            favoriteBtn = itemView.findViewById(R.id.favorites);
+//            saveBtn = itemView.findViewById(R.id.save);
+//            shareBtn = itemView.findViewById(R.id.share);
 //            moreBtn = itemView.findViewById(R.id.more);
             title = itemView.findViewById(R.id.textVideoTitle);
             subTitle =itemView.findViewById(R.id.textVideoDescription);
