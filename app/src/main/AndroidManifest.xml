@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
@@ -16,16 +17,28 @@
         android:theme="@style/Theme.Newsyy"
         tools:targetApi="31">
         <activity
-            android:name=".ProfEdit_Activity"
+            android:name=".TermsCondition"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:theme="@style/Theme.Newsyy" />
+            android:name=".PrivacyPolicy"
+            android:exported="false" />
         <activity
-            android:name=".webView"
-            android:exported="false"
-            android:theme="@style/Theme.Newsyy" />
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".languageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfEdit_Activity"
+            android:exported="false" />
+
+<!--        <activity-->
+<!--            android:name=".webView"-->
+<!--            android:exported="false"-->
+<!--            android:theme="@style/Theme.Newsyy" />-->
         <activity
             android:name=".SplashActivity"
             android:exported="true">

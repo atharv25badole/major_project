@@ -1,7 +1,1569 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/a_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/a_newsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Mars' gravity pulls Earth closer to the Sun, warming our climate, scientists say - Earth.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/anewsContent"
+                            android:textSize="15sp"
+                            android:text= "Research shows Mars' gravitational pull affects Earth's deep-sea currents and climate, causing cycles every 2.4 million years."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:id="@+id/anewsImage"
+                            android:src="@raw/sca">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Zak Doffman"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/anewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T14:04:47Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/b_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/bnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="What Are These Weird Structures Hubble Spotted Near a Monster Black Hole? - SciTechDaily"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/bnewsContent"
+                            android:textSize="15sp"
+                            android:text= "Legendary Active Galaxy Contains a Monster Black Hole Amateur astronomers can observe an extraordinary celestial object known as 3C 273, the"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/bnewsImage"
+                            android:src="@raw/scb">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rachel Kurzius"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/bnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/bnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T14:02:16Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/c_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/cnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Unexpected source to blame for rapid surge in global warming - Earth.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/cnewsContent"
+                            android:textSize="15sp"
+                            android:text="2023 climate surge linked to declining low clouds, reducing Earth’s reflectivity and intensifying warming effects."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/cnewsImage"
+                            android:src="@raw/scc">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spencer Kimball"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/cnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/cnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T13:30:27Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/d_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/dnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Mars rover Perseverance sends home postcard from scenic 'Pico Turquino' (photo) - Space.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/dnewsContent"
+                            android:textSize="15sp"
+                            android:text= "Percy is on a road trip to the rim of Jezero Crater."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/dnewsImage"
+                            android:src="@raw/scd">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="By Atherv"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/dnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T13:04:24Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/e_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/enewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Car-size asteroid will zip between Earth and the moon tonight - Space.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/enewsContent"
+                            android:textSize="15sp"
+                            android:text="It's been a busy week for asteroid watchers."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/enewsImage"
+                            android:src="@raw/sce">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "null"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/enewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/enewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T12:56:57Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/f_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/fnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="After critics decry Orion heat shield decision, NASA reviewer says agency is correct - Ars Technica"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/fnewsContent"
+                            android:textSize="15sp"
+                            android:text="“If this isn’t raising red flags out there, I don’t know what will.”…"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/fnewsImage"
+                            android:src="@raw/scf">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adela Suliman"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/fnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T12:30:05Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/g_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/gnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "Scientists find secret comet in the asteroid belt — how many others are there? - Space.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/gnewsContent"
+                            android:textSize="15sp"
+                            android:text="Comets masquerading as asteroids are being found in increasing numbers, with 14 now known in the asteroid belt."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/gnewsImage"
+                            android:src="@raw/scg">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "TOI World Desk"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/gnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/gnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T11:43:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/h_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/hnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="What Drives Language Learning: Genes, Culture, or Geography? - Neuroscience News"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/hnewsContent"
+                            android:textSize="15sp"
+                            android:text="A new study explores how cultural practices influence the transmission of native languages, showing that societal norms like matrilineal or "
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/hnewsImage"
+                            android:src="@raw/sch">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jim VandeHei, Mike Allen"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/hnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/hnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T11:42:03Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/i_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/inewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Scientists Propose Interesting Explanation for Mysterious Signals From Space - Futurism"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/inewsContent"
+                            android:textSize="15sp"
+                            android:text= "Scientists propose fast radio bursts could be caused by asteroids slamming into neutron stars, releasing copious amounts of energy."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/inewsImage"
+                            android:src="@raw/sci">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "JEAN-YVES KAMALE, MONIKA PRONCZUK"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/inewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T11:41:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/j_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/jnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="See Jupiter at its biggest and brightest this weekend - Space.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/jnewsContent"
+                            android:textSize="15sp"
+                            android:text= "Jupiter will rise opposite the sun this weekend, making the gas giant appear even brighter and larger in our sky."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/jnewsImage"
+                            android:src="@raw/scj">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Mike Wall"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/jnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/jnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T11:00:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/k_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/knewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "Astronomers Finally Discover First-ever “Astrosphere” Around Sunlike Star - The Daily Galaxy --Great Discoveries Channel"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/knewsContent"
+                            android:textSize="15sp"
+                            android:text="Astronomers have just detected the first-ever astrosphere around a sunlike star, providing a glimpse into the early years of our Sun. This"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/knewsImage"
+                            android:src="@raw/sck">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MARCIA DUNN"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/knewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/knewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:39:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/l_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/lnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Pacific Ocean Currents Are Accelerating, and It Could Change Global Climate As We Know It - SciTechDaily"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/lnewsContent"
+                            android:textSize="15sp"
+                            android:text="A crucial ocean layer essential to the dynamics of the El Niño–Southern Oscillation (ENSO). A recent study published in the Journal of Geophysical Research:"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/lnewsImage"
+                            android:src="@raw/scl">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Associated Press"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/lnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:35:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/m_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/mnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Advanced Brain Mapping Unveils Behavioral Links - Neuroscience News"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/mnewsContent"
+                            android:textSize="15sp"
+                            android:text=  "Researchers have developed a groundbreaking method to map brain activity, revealing how higher-order functions like thought and language"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/mnewsImage"
+                            android:src="@raw/scm">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Claire Comstock-Gay"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/mnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:00:28Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/n_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/nnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Lizards and snakes are 35 million years older than we thought - Ars Technica"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/nnewsContent"
+                            android:textSize="15sp"
+                            android:text="Reanalysis of a fossil finds that reptiles’ traits go back earlier than we thought."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/nnewsImage"
+                            android:src="@raw/scn">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "F1"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/nnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/nnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T09:48:41Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/o_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/onewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Most expensive dinosaur skeleton ever now on display in New York City - Livescience.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/onewsContent"
+                            android:textSize="15sp"
+                            android:text="'Apex,' one of the most complete stegosaurus fossils ever found, is on display at the American Museum of Natural History."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/onewsImage"
+                            android:src="@raw/sco">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Liam Proven"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/onewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/onewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T09:30:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/p_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/pnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "AI infiltrates the rat world: New robot can interact socially with real lab rats - Tech Xplore"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/pnewsContent"
+                            android:textSize="15sp"
+                            android:text="A team of roboticists at the Beijing Institute of Technology, working with a pair of colleagues from the Technical University of Munich, has"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/pnewsImage"
+                            android:src="@raw/scp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brooke Singman"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/pnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T09:00:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/q_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/qnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Researchers put bird legs on a drone so it can take off by jumping - The Verge"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/qnewsContent"
+                            android:textSize="15sp"
+                            android:text="EPFL’s RAVEN drone takes inspiration from birds with a pair of articulated legs allowing it to maneuver on the ground and leap into flight."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/qnewsImage"
+                            android:src="@raw/scq">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "ASSOCIATED PRESS"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/qnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/qnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T07:30:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -9,6 +1571,7 @@
         android:id="@+id/recyclerviewofscience"
         android:layout_margin="2dp"
         android:fitsSystemWindows="true"
-        android:padding="20dp"/>
+        android:padding="20dp"
+        android:layout_below="@id/lin"/>
 
 </RelativeLayout>

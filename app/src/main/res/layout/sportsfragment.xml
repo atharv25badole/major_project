@@ -1,7 +1,1565 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/a_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/a_newsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "4 winners, 2 losers from the Lions’ BIG win against Packers - Pride Of Detroit"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/anewsContent"
+                            android:textSize="15sp"
+                            android:text="The Detroit Lions defeated the Green Bay Packers on Thursday Night Football, 34-31. I came away with four winners and two losers from the victory,"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerInside"
+                            android:id="@+id/anewsImage"
+                            android:src="@raw/sa">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brandon Knapp"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/anewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/anewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T14:04:47Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/b_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/bnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Bill Belichick, North Carolina discuss Tar Heels’ coaching vacancy - The Washington Post"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bnewsContent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:text="Six-time Super Bowl winner, snubbed for NFL openings last offseason, has never coached at the college level."
+                            android:textSize="15sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/bnewsImage"
+                            android:src="@raw/sb">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rachel Kurzius"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/bnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/bnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T14:02:16Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/c_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/cnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Heisman hopeful Jeanty confirms he's draft-bound - ESPN"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/cnewsContent"
+                            android:textSize="15sp"
+                            android:text="Boise State running back Ashton Jeanty confirmed Thursday that he'll be entering the NFL draft and also said he should be the pick for the Heisman Trophy."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/cnewsImage"
+                            android:src="@raw/sc">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Spencer Kimball"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/cnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/cnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T13:30:27Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/d_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/dnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Sources: Nets-Suns set as NBA's return to China - ESPN"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/dnewsContent"
+                            android:textSize="15sp"
+                            android:text= "The NBA will return to China for the first time since 2019 with two preseason games in Macao between the Nets and Suns in October, sources told ESPN."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/dnewsImage"
+                            android:src="@raw/sd">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="By Atherv"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/dnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T13:04:24Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/e_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/enewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="LA Galaxy vs. New York Red Bulls: What will decide MLS Cup 2024? - MLSsoccer.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/enewsContent"
+                            android:textSize="15sp"
+                            android:text= "It’s New York vs. Los Angeles! The big game! The matchup everybody’s been waiting for! The true clash of giants at MLS Cup 2024 presented by Audi on Saturday "
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/enewsImage"
+                            android:src="@raw/se">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "null"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/enewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/enewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T12:56:57Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/f_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/fnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Red Sox want another Juan Soto, Scott Boras meeting as possible Steve Cohen threat looms - New York Post "
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/fnewsContent"
+                            android:textSize="15sp"
+                            android:text="The Juan Soto sweepstakes are getting down to the wire, and one team wants to ensure it has a chance to land the top prize of the offseason."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/fnewsImage"
+                            android:src="@raw/sf">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adela Suliman"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/fnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T12:30:05Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/g_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/gnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="St. Petersburg City Council approves bonds for Rays stadium, Gas Plant - Tampa Bay Times"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/gnewsContent"
+                            android:textSize="15sp"
+                            android:text= "The stadium deal may now come down to the Pinellas County Commission, which meets Dec. 17."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/gnewsImage"
+                            android:src="@drawable/ic_launcher_background">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "TOI World Desk"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/gnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/gnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T11:43:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/h_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/hnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="DK Metcalf, Kenneth Walker miss Thursday’s practice - NBC Sports"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/hnewsContent"
+                            android:textSize="15sp"
+                            android:text="The Seahawks downgraded running back Kenneth Walker (ankle/calf) and wide receiver DK Metcalf (shoulder) on Thursday."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/hnewsImage"
+                            android:src="@raw/sh">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jim VandeHei, Mike Allen"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/hnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/hnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T11:42:03Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/i_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/inewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Competitive Balance rounds set for 2025 Draft - MLB.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/inewsContent"
+                            android:textSize="15sp"
+                            android:text="The top of the 2025 Draft won’t be set until Tuesday’s MLB Draft Lottery presented by Nike. But the overall Draft order is beginning to take shape, now that the "
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/inewsImage"
+                            android:src="@raw/si">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "JEAN-YVES KAMALE, MONIKA PRONCZUK"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/inewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/inewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T11:41:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/j_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/jnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="The A’s clear the last major hurdle for a $1.75 billion Las Vegas stadium - The Associated Press"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/jnewsContent"
+                            android:textSize="15sp"
+                            android:text="The Las Vegas Stadium Authority approved the lease, non-relocation and development documents Thursday to clear the last major hurdles for the Athletics to"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/jnewsImage"
+                            android:src="@drawable/ic_launcher_background">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Mike Wall"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/jnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/jnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T11:00:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/k_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/knewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "Week 14 Rankings (Updated): Packers, Lions set to battle on TNF - theScore"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/knewsContent"
+                            android:textSize="15sp"
+                            android:text= "theScore's Justin Boone was first overall in FantasyPros' Most Accurate Expert Competition in 2019 and finished among the top seven each of his last seven"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/knewsImage"
+                            android:src="@raw/sk">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MARCIA DUNN"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/knewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/knewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:39:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/l_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/lnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Packers-Lions inactives | Week 14 - Packers.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/lnewsContent"
+                            android:textSize="15sp"
+                            android:text="Both teams had ruled four players out already"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/lnewsImage"
+                            android:src="@raw/sl">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Associated Press"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/lnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:35:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/m_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/mnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text= "Check mate: Wilson, Smith on the same page - Steelers.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/mnewsContent"
+                            android:textSize="15sp"
+                            android:text= "Steelers offense might be hitting its stride heading into December"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/mnewsImage"
+                            android:src="@raw/sm">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "Claire Comstock-Gay"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/mnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/mnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T10:00:28Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/n_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/nnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="NFL Week 14 staff picks: Moneyline, spread, over/under predictions - Pride Of Detroit"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/nnewsContent"
+                            android:textSize="15sp"
+                            android:text= "The POD staff make their predictions for the Week 14 slate of games in the NFL."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/nnewsImage"
+                            android:src="@raw/sn">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "F1"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/nnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/nnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T09:48:41Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/o_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/onewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Alex Pereira and Jamahal Hill almost get in fist fight | Video - MMAWeekly"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/onewsContent"
+                            android:textSize="15sp"
+                            android:text="UFC light heavyweight champion Alex Pereira and former titleholder Jamahal Hill nearly came to blows at the UFC Performance Institute."
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/onewsImage"
+                            android:src="@raw/so">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Liam Proven"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/onewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/onewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T09:30:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/p_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/pnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="Richardson fired by Chicago, Sorensen named interim - NHL.com"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/pnewsContent"
+                            android:textSize="15sp"
+                            android:text="Was 57-118-15 in 3 seasons with Chicago, which has lost 10 of 13"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/pnewsImage"
+                            android:src="@raw/sp">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brooke Singman"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/pnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text="2024-12-05T09:00:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:padding="10dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="5dp"
+                android:id="@+id/q_card_view">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/qnewsMainHeading"
+                        android:padding="5dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/black"
+                        android:text="MLB rumors: Astros make Alex Bregman an offer, Cubs get Cody Bellinger trade calls, Yankees meet with an ace - CBS Sports"
+                        android:textSize="20sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="6"
+                            android:padding="5dp"
+                            android:id="@+id/qnewsContent"
+                            android:textSize="15sp"
+                            android:text= "Here are your hot stove rumors for Thursday, Dec. 5"
+                            >
+
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/qnewsImage"
+                            android:src="@raw/sq">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text= "ASSOCIATED PRESS"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:id="@+id/qnewsAuth"
+                        android:textColor="@color/light_blue_600"
+                        android:padding="5dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/qnewsTime"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:text= "2024-12-05T07:30:00Z"
+                        android:textStyle="bold"
+                        android:textSize="12dp">
+
+                    </TextView>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
@@ -9,6 +1567,7 @@
         android:id="@+id/recyclerviewofsports"
         android:layout_margin="2dp"
         android:fitsSystemWindows="true"
-        android:padding="20dp"/>
+        android:padding="20dp"
+        android:layout_below="@id/lin"/>
 
 </RelativeLayout>

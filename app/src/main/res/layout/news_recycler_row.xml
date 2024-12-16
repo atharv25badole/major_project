@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="130dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/news_recycler_row">
+    android:id="@+id/news_recycler_row"
+    >
 
 <androidx.cardview.widget.CardView
     android:layout_width="match_parent"

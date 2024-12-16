@@ -1,7 +1,5 @@
 package com.example.newsyy;
 
-import static android.app.ProgressDialog.show;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -14,15 +12,11 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.io.IOException;
 
@@ -35,6 +29,7 @@ public class ProfEdit_Activity extends AppCompatActivity {
     private Uri uri;
     private Bitmap bitmapImage;
     DBHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +82,7 @@ public class ProfEdit_Activity extends AppCompatActivity {
                 storeImage();
             }
         });
+
     }
     private void storeImage(){
         if (!uploadName.getText().toString().isEmpty() && !uploadEmail.getText().toString().isEmpty()
@@ -97,7 +93,6 @@ public class ProfEdit_Activity extends AppCompatActivity {
         } else {
             Toast.makeText(ProfEdit_Activity.this, "Fields are mandatory", Toast.LENGTH_SHORT).show();
         }
-
 
         };
     }

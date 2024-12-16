@@ -18,53 +18,53 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class SportsFragment extends Fragment {
-    String api="cc6da580caec42d9bf203bbfdd99c1f3";
-    ArrayList<modelClass> modelClassArrayList;
-    NewsRecyclerAdapter adapter;
-    String country="us";
-    private RecyclerView recyclerViewofSports;
-    private String category="sports";
+//    String api="cc6da580caec42d9bf203bbfdd99c1f3";
+//    ArrayList<modelClass> modelClassArrayList;
+//    NewsRecyclerAdapter adapter;
+//    String country="us";
+//    private RecyclerView recyclerViewofSports;
+//    private String category="sports";
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.sportsfragment,null);
-        recyclerViewofSports=v.findViewById(R.id.recyclerviewofsports);
-        modelClassArrayList=new ArrayList<>();
-        recyclerViewofSports.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter= new NewsRecyclerAdapter(getContext(),modelClassArrayList);
-        recyclerViewofSports.setAdapter(adapter);
-
-        findNews();
+//        recyclerViewofSports=v.findViewById(R.id.recyclerviewofsports);
+//        modelClassArrayList=new ArrayList<>();
+//        recyclerViewofSports.setLayoutManager(new LinearLayoutManager(getContext()));
+//        adapter= new NewsRecyclerAdapter(getContext(),modelClassArrayList);
+//        recyclerViewofSports.setAdapter(adapter);
+//
+//        findNews();
 
         return v;
 
 
     }
 
-    private void findNews(){
-        apiUtilities utilities=new apiUtilities();
-
-        apiUtilities.getApiInterface().getCategoryNews(country,category,100,api).enqueue(new Callback<mainNews>() {
-            @Override
-            public void onResponse(Call<mainNews> call, Response<mainNews> response) {
-
-
-                if (response.isSuccessful()){
-                    modelClassArrayList.addAll(response.body().getArticles());
-                    adapter.notifyDataSetChanged();
-                }
-
-            }
-
-            @Override
-            public void onFailure(Call<mainNews> call, Throwable t) {
-
-            }
-        });
-
-
-
-
-    }
+//    private void findNews(){
+//        apiUtilities utilities=new apiUtilities();
+//
+//        apiUtilities.getApiInterface().getCategoryNews(country,category,100,api).enqueue(new Callback<mainNews>() {
+//            @Override
+//            public void onResponse(Call<mainNews> call, Response<mainNews> response) {
+//
+//
+//                if (response.isSuccessful()){
+//                    modelClassArrayList.addAll(response.body().getArticles());
+//                    adapter.notifyDataSetChanged();
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Call<mainNews> call, Throwable t) {
+//
+//            }
+//        });
+//
+//
+//
+//
+//    }
 }

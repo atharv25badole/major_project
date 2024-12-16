@@ -39,8 +39,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
             case 4:
                 return new EntertainmentFragment();
 
-            case 5:
-                return new TechnologyFragment();
+//            case 5:
+//                return new TechnologyFragment();
 
             default:
                 return null;

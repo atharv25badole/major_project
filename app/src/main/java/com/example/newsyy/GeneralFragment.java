@@ -1,18 +1,22 @@
 package com.example.newsyy;
 
+
+
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.zip.Inflater;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -21,53 +25,51 @@ import retrofit2.Response;
 public class GeneralFragment extends Fragment {
 
 
-    String api="cc6da580caec42d9bf203bbfdd99c1f3";
-    ArrayList<modelClass> modelClassArrayList;
-    NewsRecyclerAdapter adapter;
-    String country="us";
-    private RecyclerView recyclerViewofGeneral;
+    String API_KEY = "465e243239604bdfa0adfa13ea22a8b1";
+    RecyclerView recyclerView;
+    Adapter adapter;
+    ArrayList<Model> modelArrayList;
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.generalfragment,null);
+        View v = inflater.inflate(R.layout.generalfragment, null);
 
-        recyclerViewofGeneral=v.findViewById(R.id.recyclerviewofgeneral);
-        modelClassArrayList=new ArrayList<>();
-        recyclerViewofGeneral.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter= new NewsRecyclerAdapter(getContext(), modelClassArrayList);
-        recyclerViewofGeneral.setAdapter(adapter);
+        recyclerView = v.findViewById(R.id.general_recyclerView);
+        modelArrayList = new ArrayList<>();
+        adapter = new Adapter(getContext(), modelArrayList);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        findNews();
+        getNews();
+
+
 
         return v;
 
 
     }
 
-    private void findNews(){
-        apiUtilities utilities=new apiUtilities();
+    void getNews() {
 
-        apiUtilities.getApiInterface().getNews(country,100,api).enqueue(new Callback<mainNews>() {
+        NewsApiUtilities.getApiInterface().getNews("us", 100, API_KEY).enqueue(new Callback<MainNewsContent>() {
             @Override
-            public void onResponse(Call<mainNews> call, Response<mainNews> response) {
+            public void onResponse(Call<MainNewsContent> call, Response<MainNewsContent> response) {
+                if (response.isSuccessful()) {
 
-                if (response.isSuccessful()){
-                    modelClassArrayList.addAll(response.body().getArticles());
+                    modelArrayList.addAll(response.body().getArticles());
                     adapter.notifyDataSetChanged();
+
                 }
-            }
+                }
+
 
             @Override
-            public void onFailure(Call<mainNews> call, Throwable t) {
+            public void onFailure(Call<MainNewsContent> call, Throwable t) {
+                Log.i("GOT Failure News not fatched by app", Objects.requireNonNull(t.getMessage()));
 
             }
         });
-
-
-
-
     }
-
-
 }

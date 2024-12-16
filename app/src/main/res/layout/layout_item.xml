@@ -12,7 +12,7 @@
         android:padding="10dp"
         app:cardCornerRadius="10dp"
         android:elevation="5dp"
-        android:id="@+id/cardview">
+        android:id="@+id/news_card_view">
  
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/mainheading"
+                android:id="@+id/newsMainHeading"
                 android:padding="5dp"
                 android:ellipsize="end"
                 android:maxLines="2"
@@ -46,7 +46,7 @@
                     android:ellipsize="end"
                     android:maxLines="6"
                     android:padding="5dp"
-                    android:id="@+id/content"
+                    android:id="@+id/newsContent"
                     android:textSize="15sp"
                     android:text="Main Content"
                     >
@@ -59,7 +59,7 @@
                     android:padding="5dp"
                     android:layout_weight="1"
                     android:scaleType="centerCrop"
-                    android:id="@+id/imageview"
+                    android:id="@+id/newsImage"
                     android:src="@drawable/ic_launcher_background">
                     
                 </ImageView>
@@ -72,7 +72,7 @@
                 android:text="By Atherv"
                 android:textSize="13sp"
                 android:textStyle="italic"
-                android:id="@+id/author"
+                android:id="@+id/newsAuth"
                 android:textColor="@color/light_blue_600"
                 android:padding="5dp">
 
@@ -81,7 +81,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/time"
+                android:id="@+id/newsTime"
                 android:padding="5dp"
                 android:textColor="@color/black"
                 android:text="Published At"

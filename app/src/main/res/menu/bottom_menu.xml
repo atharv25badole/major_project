@@ -3,27 +3,27 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="@string/homemen"
         android:icon="@drawable/baseline_home_24"/>
 
-    <item
-        android:id="@+id/articles"
-        android:title="article"
-        android:icon="@drawable/article_45"/>
+<!--    <item-->
+<!--        android:id="@+id/articles"-->
+<!--        android:title="@string/article"-->
+<!--        android:icon="@drawable/article_45"/>-->
 
     <item
         android:id="@+id/shorts"
-        android:title="Shorts"
+        android:title="@string/shorts"
         android:icon="@drawable/shorts_icon"/>
 
     <item
         android:id="@+id/videos"
-        android:title="Video"
+        android:title="@string/video"
         android:icon="@drawable/baseline_video_library_24"/>
 
     <item
         android:id="@+id/profile"
-        android:title="profile"
+        android:title="@string/profile"
         android:icon="@drawable/baseline_account_circle_24"/>
 
 </menu>
